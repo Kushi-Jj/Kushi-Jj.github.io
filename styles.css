@@ -1,120 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-  color: #222;
-}
-
-/* NAV */
-header {
-  position: fixed;
-  width: 100%;
-  background: white;
-  border-bottom: 1px solid #eee;
-  z-index: 100;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
 }
 
 nav {
-  max-width: 1100px;
-  margin: auto;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+  background-color: #243a5e;
+  padding: 15px;
+  text-align: center;
 }
 
 nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  padding-top: 100px;
-  text-align: center;
-  background: linear-gradient(120deg, #fdfbfb, #ebedee);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-}
-
-.hero h2 {
-  font-weight: 300;
-}
-
-.hero p {
-  margin-top: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* SECTIONS */
-.section {
-  max-width: 900px;
-  margin: auto;
-  padding: 100px 20px;
-}
-
-.section h2 {
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 20px;
-}
-
-.light {
-  background: #fafafa;
-}
-
-.list {
-  margin-top: 15px;
-  padding-left: 20px;
-}
-
-.publication {
-  margin-bottom: 20px;
-}
-
-/* CV BUTTON */
-.cv-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  border: 1px solid #333;
-  text-decoration: none;
-  color: #333;
-  transition: 0.3s;
-}
-
-.cv-button:hover {
-  background: #333;
   color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
 }
 
-/* FOOTER */
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+}
+
+.profile {
+  width: 160px;
+  border-radius: 50%;
+}
+
 footer {
   text-align: center;
-  padding: 30px;
-  border-top: 1px solid #eee;
+  color: gray;
+  padding: 20px;
 }
