@@ -1,87 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jeevan RJ | Personal Website</title>
+  <meta charset="UTF-8">
+  <title>Your Name | Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">JeevanRJ</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- NAVIGATION -->
+<header>
+  <nav>
+    <h1 class="logo">Your Name</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Hi, I'm <span>Jeevan RJ</span></h1>
-    <p>Computer Science Student | Web Developer</p>
-    <a href="#contact" class="btn">Get In Touch</a>
-  </section>
+<!-- HOME -->
+<section id="home" class="hero">
+  <h2>Hello, I’m</h2>
+  <h1>Your Name</h1>
+  <p>
+    Researcher | Graduate Student | [Your Field]<br>
+    Interested in human-centered systems, learning, and applied research.
+  </p>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
+<!-- RESEARCH -->
+<section id="research" class="section">
+  <h2>Research</h2>
+  <p>
+    My research focuses on [your research interests].
+    I am particularly interested in interdisciplinary approaches combining
+    technology, human behavior, and real-world impact.
+  </p>
+
+  <ul class="list">
+    <li>Research Topic One</li>
+    <li>Research Topic Two</li>
+    <li>Research Topic Three</li>
+  </ul>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section light">
+  <h2>Publications</h2>
+
+  <div class="publication">
+    <h3>Paper Title One</h3>
     <p>
-      I am a Computer Science student with a strong interest in software development,
-      web technologies, and problem-solving. I enjoy building clean, functional,
-      and user-friendly applications while continuously learning new technologies.
+      Author Name(s). <em>Conference / Journal</em>, Year.
     </p>
-  </section>
+  </div>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section gray">
-    <h2>Skills</h2>
-    <div class="cards">
-      <div class="card">HTML & CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">Python</div>
-      <div class="card">Git & GitHub</div>
-    </div>
-  </section>
+  <div class="publication">
+    <h3>Paper Title Two</h3>
+    <p>
+      Author Name(s). <em>Conference / Journal</em>, Year.
+    </p>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>Short description of your project from the old website.</p>
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Another project description.</p>
-      </div>
-    </div>
-  </section>
+<!-- TEACHING -->
+<section id="teaching" class="section">
+  <h2>Teaching & Mentorship</h2>
+  <ul class="list">
+    <li>Course Name – Role (TA / Instructor)</li>
+    <li>Mentored undergraduate students on research projects</li>
+    <li>Academic writing and presentation guidance</li>
+  </ul>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section gray">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: github.com/yourusername</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
-  </section>
+<!-- ACTIVITIES -->
+<section id="activities" class="section light">
+  <h2>Activities</h2>
+  <ul class="list">
+    <li>Conference volunteer</li>
+    <li>Research group member</li>
+    <li>Workshops and seminars</li>
+  </ul>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Jeevan RJ. All rights reserved.</p>
-  </footer>
+<!-- CV -->
+<section id="cv" class="section">
+  <h2>Curriculum Vitae</h2>
+  <p>You can download my full CV here:</p>
+  <a class="cv-button" href="cv.pdf" target="_blank">Download CV (PDF)</a>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
