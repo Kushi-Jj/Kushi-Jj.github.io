@@ -1,5 +1,10 @@
+// Toggle mobile menu
 function toggleMenu() {
   const nav = document.getElementById("navLinks");
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
-  nav.style.flexDirection = "column";
+  if (nav.style.display === "flex") {
+    nav.style.display = "none";
+  } else {
+    nav.style.display = "flex";
+    nav.style.flexDirection = "column";
+  }
 }
