@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CV | Kasuni Prasadi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="activities.html">Activities</a>
-  <a href="cv.html">CV</a>
-</nav>
+<header>
+  <nav class="navbar">
+    <div class="logo">Kasuni Prasadi</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching & Mentorship</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
 
-<div class="container">
-<h1>Curriculum Vitae</h1>
+<main class="content">
+  <h1>Curriculum Vitae</h1>
+  <p>Download my CV:</p>
+  <a href="assets/files/cv.pdf" target="_blank">Download PDF</a>
+</main>
 
-<p>
-<a href="docs/CV.pdf" target="_blank">Download CV (PDF)</a>
-</p>
-
-</div>
+<script src="js/script.js"></script>
 </body>
 </html>
