@@ -1,3 +1,4 @@
+/* ======================= RESET ======================= */
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ======================= HEADER & NAVBAR ======================= */
 header {
-  background: #ffffff;
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -24,6 +29,7 @@ header {
   font-weight: bold;
 }
 
+/* ======================= NAV LINKS ======================= */
 .nav-links {
   list-style: none;
   display: flex;
@@ -34,33 +40,69 @@ header {
   text-decoration: none;
   color: #333;
   font-size: 15px;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 3px;
+}
+
 .nav-links a.active {
   color: #0056b3;
   border-bottom: 2px solid #0056b3;
   padding-bottom: 3px;
 }
 
+/* ======================= MOBILE MENU ======================= */
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
 }
 
+/* ======================= CONTENT ======================= */
 .content {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
+.content h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #222;
+}
+
+.content p, .content ul, .content li, .content a {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.content ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.content a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* ======================= RESPONSIVE ======================= */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
     top: 60px;
     right: 0;
-    background: white;
+    background: #fff;
     flex-direction: column;
     width: 100%;
     display: none;
@@ -68,7 +110,7 @@ header {
   }
 
   .nav-links li {
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
   }
 
