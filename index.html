@@ -2,40 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kasuni Prasadi | PhD Student</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kasuni Prasadi | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="activities.html">Activities</a>
-  <a href="cv.html">CV</a>
-</nav>
+<header>
+  <nav class="navbar">
+    <div class="logo">Kasuni Prasadi</div>
 
-<div class="container">
-  <img src="assets/profile.jpg" class="profile" alt="Profile photo">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching & Mentorship</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
 
-  <h1>Kasuni Prasadi</h1>
-  <h3>PhD Student</h3>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
 
+<main class="content">
+  <h1>About Me</h1>
   <p>
-    I am a PhD student with research interests in human factors,
-    fatigue, and human performance in safety-critical environments.
+    I am a PhD student interested in human-centered computing, fatigue research,
+    and applied data science.
   </p>
+</main>
 
-  <p>
-    My work focuses on understanding how shift work and rest affect
-    cognitive performance and decision-making.
-  </p>
-</div>
-
-<footer>
-  © 2026 Kasuni Prasadi
-</footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
