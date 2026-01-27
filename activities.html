@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Activities | Kasuni Prasadi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Activities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="activities.html">Activities</a>
-  <a href="cv.html">CV</a>
-</nav>
+<header>
+  <nav class="navbar">
+    <div class="logo">Kasuni Prasadi</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching & Mentorship</a></li>
+      <li><a href="activities.html" class="active">Activities</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
 
-<div class="container">
-<h1>Academic Activities</h1>
+<main class="content">
+  <h1>Activities</h1>
+  <ul>
+    <li>Conference Volunteer – XYZ Conference</li>
+    <li>Workshop Organizer – ABC Workshop</li>
+    <li>Community Outreach / Science Communication</li>
+  </ul>
+</main>
 
-<ul>
-  <li>Conference presentations</li>
-  <li>Research workshops</li>
-  <li>Academic volunteering</li>
-</ul>
-
-</div>
+<script src="js/script.js"></script>
 </body>
 </html>
