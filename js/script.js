@@ -1,10 +1,2 @@
-// Toggle mobile menu
-function toggleMenu() {
-  const nav = document.getElementById("navLinks");
-  if (nav.style.display === "flex") {
-    nav.style.display = "none";
-  } else {
-    nav.style.display = "flex";
-    nav.style.flexDirection = "column";
-  }
-}
+// You can add animations later
+
