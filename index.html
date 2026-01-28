@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kasuni Prasadi | Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Kasuni | Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">Kasuni Prasadi</div>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Kasuni</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching & Mentorship</a></li>
-      <li><a href="activities.html">Activities</a></li>
-      <li><a href="cv.html">CV</a></li>
-    </ul>
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I’m Kasuni</h1>
+      <p>PhD Student | Researcher | Lifelong Learner</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  </nav>
-</header>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a PhD student interested in research, technology, and data-driven
+      problem solving. I enjoy learning, teaching, and building meaningful projects.
+    </p>
+  </section>
 
-<main class="content">
-  <h1>About Me</h1>
-  <p>
-    I am a PhD student interested in human-centered computing, fatigue research,
-    and applied data science.
-  </p>
-</main>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Research</span>
+      <span>Python</span>
+      <span>Data Analysis</span>
+      <span>Machine Learning</span>
+      <span>Academic Writing</span>
+    </div>
+  </section>
 
-<script src="js/script.js"></script>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Research Project</h3>
+        <p>Fatigue analysis and human performance research.</p>
+      </div>
+      <div class="card">
+        <h3>Personal Website</h3>
+        <p>This website built using GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>GitHub: github.com/Kushi-Jj</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Kasuni</p>
+  </footer>
+
 </body>
 </html>
