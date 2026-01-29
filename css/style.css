@@ -160,3 +160,10 @@ footer {
     transform: translateY(0);
   }
 }
+.hero p {
+  max-width: 600px;
+}
+
+.card p {
+  line-height: 1.6;
+}
