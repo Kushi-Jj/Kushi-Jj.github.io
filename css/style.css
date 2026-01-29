@@ -167,3 +167,21 @@ footer {
 .card p {
   line-height: 1.6;
 }
+
+.figure {
+  margin-top: 14px;
+}
+
+.figure img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #374151;
+  font-style: italic;
+}
+
