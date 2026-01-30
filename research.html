@@ -8,149 +8,170 @@
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <div><strong>Jeevan Jayasuriya</strong></div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="research.html" class="active">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="cv.html">CV</a>
-  </div>
-</nav>
+  <!-- NAVIGATION -->
+  <nav>
+    <div><strong>Jeevan Jayasuriya</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div>
-    <h1>Research</h1>
-    <p>Multimodal analysis of human performance, sensorimotor control, and human–machine interaction under extreme and safety-critical conditions.</p>
-  </div>
-  <img src="images/profile1.png" alt="Research">
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Research</h1>
+      <p>Multimodal analysis of human performance, sensorimotor control, and human–machine interaction under extreme and safety-critical conditions.</p>
+    </div>
+    <img src="images/profile1.png" alt="Research">
+  </section>
 
-<!-- TABLE OF CONTENTS -->
-<section class="section toc">
-  <h2>Contents</h2>
-  <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#spaceflight">Spaceflight Optimization</a></li>
-    <li><a href="#firefighter">Firefighter Devices</a></li>
-    <li><a href="#coal">Coal Yard Safety</a></li>
-    <li><a href="#undergrad">Undergraduate Projects</a></li>
-    <li><a href="#industry">Industrial Internships</a></li>
-  </ul>
-</section>
+  <!-- TABLE OF CONTENTS -->
+  <section class="section toc">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#overview">Research Overview</a></li>
+      <li><a href="#spaceflight">Spaceflight Human Optimization</a></li>
+      <li><a href="#firefighter">Firefighter Assistive Devices</a></li>
+      <li><a href="#coal">Fire Safety in Coal Yards</a></li>
+      <li><a href="#undergrad">Other Undergraduate Research</a></li>
+      <li><a href="#industry">Industrial Internship Projects</a></li>
+    </ul>
+  </section>
 
-<!-- RESEARCH OVERVIEW -->
-<section class="section" id="overview">
-  <h2>Research Overview</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Analyzing <strong>multimodal physiological and behavioral data</strong> to understand human sensorimotor control under extreme conditions like <strong>space travel</strong> and <strong>firefighting</strong>.</p>
+  <!-- RESEARCH OVERVIEW -->
+  <section class="section" id="overview">
+    <h2>Research Overview</h2>
+    <div class="cards">
+      <div class="card">
+        <p>My research focuses on analyzing <strong>multimodal physiological and behavioral data</strong> to understand how human sensorimotor control and performance vary under challenging conditions such as <strong>space travel</strong> and <strong>firefighting</strong>, as well as during human–machine interactions where system design and autonomy influence human behavior.</p>
+      </div>
+      <div class="card">
+        <p>I integrate insights from <strong>brain imaging</strong>, movement kinematics, eye gaze, muscle activation, heart rate, and subjective perception, together with musculoskeletal analysis and data-driven methods including <strong>statistics, machine learning, and deep learning–based temporal models</strong>.</p>
+      </div>
+      <div class="card">
+        <p>The overarching goal of my research is to translate these insights into the <strong>design and control of human–machine systems</strong> that jointly optimize human performance, system effectiveness, and safety.</p>
+      </div>
     </div>
-    <div class="card">
-      <p>Integrating insights from <strong>brain imaging</strong>, movement kinematics, eye gaze, muscle activation, heart rate, and musculoskeletal analysis using <strong>statistics, machine learning, and deep learning–based temporal models</strong>.</p>
-    </div>
-    <div class="card">
-      <p>Translating insights into <strong>human–machine system design and control</strong> to optimize human performance, system efficiency, and safety.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- SPACEFLIGHT -->
-<section class="section" id="spaceflight">
-  <h2>Spaceflight Human Optimization</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="images/research/spaceflight/hazards.jpg" alt="Spaceflight hazards">
-      <h3>Multiple Spaceflight Hazards</h3>
-      <p>Study of how altered gravity, fatigue, and high workload affect astronaut sensorimotor performance and adaptation.</p>
+  <!-- SPACEFLIGHT -->
+  <section class="section" id="spaceflight">
+    <h2>Research on Spaceflight Human Optimization</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Multiple Spaceflight Hazards</h3>
+        <p>Astronauts are exposed to multiple hazards including altered gravity and fatigue arising from high workload and sleep deprivation. We investigate whether these stressors jointly impair sensorimotor function or whether humans adapt to sustain performance.</p>
+        <div class="figure">
+          <img src="images/research/spaceflight/hazards.jpg" alt="Spaceflight hazards">
+          <div class="caption">Figure 1. Multiple spaceflight hazards including altered gravity and fatigue.</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Data Collection and Synchronization</h3>
+        <p>Multimodal data streams were synchronized using <strong>Lab Streaming Layer (LSL)</strong>. Devices were wirelessly networked with automated error-checking to support robust, high-fidelity data collection.</p>
+        <div class="figure">
+          <img src="images/research/spaceflight/hazards.jpg" alt="Data collection">
+          <div class="caption">Figure 2. Synchronized multimodal data collection setup.</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Simulating Altered Gravity</h3>
+        <p>Altered gravity effects were recreated using <strong>Galvanic Vestibular Stimulation (GVS)</strong>, applying controlled electrical currents to perturb vestibular signaling and investigate balance and sensorimotor responses.</p>
+        <div class="figure">
+          <img src="images/research/spaceflight/hazards.jpg" alt="Altered gravity simulation">
+          <div class="caption">Figure 3. Simulation of altered gravity using GVS.</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Sensorimotor Test Battery</h3>
+        <p>Participants completed a 13-task sensorimotor battery under combined effects of GVS and fatigue.</p>
+      </div>
+      <div class="card">
+        <h3>Fatigue Manipulation and Assessment</h3>
+        <p>Mental fatigue was induced using a two-back task, while sleep-deprivation fatigue was induced via overnight testing. Fatigue was assessed using PVT, KSS, and POMS.</p>
+      </div>
+      <div class="card">
+        <h3>Key Findings and Ongoing Work</h3>
+        <p>Distinct physiological responses were observed under interactive effects of altered gravity and fatigue. Related journal publications are in preparation.</p>
+      </div>
+      <div class="card">
+        <h3>Assistive Technologies for Planetary Exploration</h3>
+        <p>A <strong>Temporal Convolutional Network (TCN)</strong> was trained to forecast gait instability 0.1–1.0 s ahead using kinematic and muscle activation data, enabling proactive assistive interventions.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Data Collection & Synchronization</h3>
-      <p>Multimodal streams synchronized with <strong>Lab Streaming Layer (LSL)</strong> for high-fidelity human performance analysis.</p>
-    </div>
-    <div class="card">
-      <h3>Simulating Altered Gravity</h3>
-      <p>Using <strong>Galvanic Vestibular Stimulation (GVS)</strong> to perturb vestibular signals and study balance and sensorimotor responses.</p>
-    </div>
-    <div class="card">
-      <h3>Sensorimotor Test Battery</h3>
-      <p>13-task battery to assess combined effects of GVS and fatigue on performance.</p>
-    </div>
-    <div class="card">
-      <h3>Fatigue Assessment</h3>
-      <p>Mental fatigue induced with two-back task; sleep-deprivation tested overnight. Measured using PVT, KSS, and POMS.</p>
-    </div>
-    <div class="card">
-      <h3>Assistive Technologies</h3>
-      <p><strong>Temporal Convolutional Networks (TCN)</strong> predict gait instability for proactive interventions.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- FIREFIGHTERS -->
-<section class="section" id="firefighter">
-  <h2>Firefighter Assistive Devices</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="images/research/firefighter/exoskeleton.jpg" alt="Firefighter exoskeleton">
-      <p>Developing exoskeletons to reduce injuries and enhance firefighter safety during high-load tasks.</p>
+  <!-- FIREFIGHTERS -->
+  <section class="section" id="firefighter">
+    <h2>Research on Firefighter Assistive Devices</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Thousands of fireground injuries occur annually, motivating the development of effective firefighter assistive technologies.</p>
+      </div>
+      <div class="card">
+        <h3>Can a Firefighter Exoskeleton Help?</h3>
+        <p>Biomechanical data from professional firefighters were collected to build a comprehensive movement database. Musculoskeletal simulations were performed in the <strong>AnyBody Modeling System</strong>.</p>
+      </div>
+      <div class="card">
+        <h3>Closed-Loop Human–Machine Interfaces</h3>
+        <p>Closed-loop controllers (e.g., PID control) were implemented to regulate muscle activation during loaded tasks, improving safety and comfort.</p>
+      </div>
+      <div class="card">
+        <h3>Hardware and Control Architecture</h3>
+        <p>Actuators were selected based on biomechanical demands. Controller-actuator communication was implemented via CAN bus.</p>
+      </div>
+      <div class="card">
+        <h3>Zero Interaction Force Controller</h3>
+      </div>
     </div>
-    <div class="card">
-      <h3>Closed-Loop Control</h3>
-      <p>PID controllers regulate muscle activation for improved comfort and safety.</p>
-    </div>
-    <div class="card">
-      <h3>Hardware & Control Architecture</h3>
-      <p>Actuators selected based on biomechanical demands; communication via CAN bus.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- COAL -->
-<section class="section" id="coal">
-  <h2>Fire Safety in Coal Yards</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="images/research/coal/coal_fire.jpg" alt="Coal yard fire safety">
-      <p>Proactive methods to mitigate spontaneous ignition in coal yards. Related publications available.</p>
+  <!-- COAL -->
+  <section class="section" id="coal">
+    <h2>Fire Safety in Coal Yards</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Coal yards are prone to spontaneous ignition. This project investigated a cost-effective, proactive approach for mitigating fire hazards. A related journal publication is available.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- UNDERGRADUATE PROJECTS -->
-<section class="section" id="undergrad">
-  <h2>Other Undergraduate Research</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Obstacle Navigation in Mobile Robotics</p>
+  <!-- UNDERGRADUATE -->
+  <section class="section" id="undergrad">
+    <h2>Other Undergraduate Research</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Obstacle Navigation in Mobile Robotics</p>
+      </div>
+      <div class="card">
+        <p>Machine Vision–Based Grain Classification</p>
+      </div>
     </div>
-    <div class="card">
-      <p>Machine Vision–Based Grain Classification</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- INDUSTRIAL INTERNSHIPS -->
-<section class="section" id="industry">
-  <h2>Industrial Internship Projects</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Pneumatic-Based Electrical Component Testing Machine</p>
+  <!-- INDUSTRIAL -->
+  <section class="section" id="industry">
+    <h2>Industrial Internship Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Pneumatic-Based Electrical Component Testing Machine</p>
+      </div>
+      <div class="card">
+        <p>Conveyor System for Production Floor Output Collection</p>
+      </div>
     </div>
-    <div class="card">
-      <p>Conveyor System for Production Floor Output Collection</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  © 2026 Jeevan Jayasuriya
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Jeevan Jayasuriya
+  </footer>
 
-<script src="js/lightbox.js"></script>
+  <!-- LIGHTBOX SCRIPT -->
+  <script src="js/lightbox.js"></script>
 </body>
 </html>
