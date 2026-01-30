@@ -10,7 +10,7 @@
 
 <!-- NAVIGATION -->
 <nav>
-  <strong>Jeevan Jayasuriya</strong>
+  <div><strong>Jeevan Jayasuriya</strong></div>
   <div>
     <a href="index.html">Home</a>
     <a href="research.html" class="active">Research</a>
@@ -24,9 +24,9 @@
 <section class="hero">
   <div>
     <h1>Research</h1>
-    <p>Exploring human performance, sensorimotor control, and human–machine interaction in extreme and safety-critical environments.</p>
+    <p>Multimodal analysis of human performance, sensorimotor control, and human–machine interaction under extreme and safety-critical conditions.</p>
   </div>
-  <img src="images/profile1.png" alt="Research Profile">
+  <img src="images/profile1.png" alt="Research">
 </section>
 
 <!-- TABLE OF CONTENTS -->
@@ -44,16 +44,16 @@
 
 <!-- RESEARCH OVERVIEW -->
 <section class="section" id="overview">
-  <h2>Overview</h2>
+  <h2>Research Overview</h2>
   <div class="cards">
-    <div class="card" style="animation: fadeUp 0.5s ease;">
-      <p>My research combines physiological, behavioral, and machine learning approaches to enhance human performance and safety in extreme environments.</p>
+    <div class="card">
+      <p>Analyzing <strong>multimodal physiological and behavioral data</strong> to understand human sensorimotor control under extreme conditions like <strong>space travel</strong> and <strong>firefighting</strong>.</p>
     </div>
-    <div class="card" style="animation: fadeUp 0.6s ease;">
-      <p>We analyze multimodal data — brain imaging, kinematics, eye gaze, muscle activation, and heart rate — to understand human sensorimotor function.</p>
+    <div class="card">
+      <p>Integrating insights from <strong>brain imaging</strong>, movement kinematics, eye gaze, muscle activation, heart rate, and musculoskeletal analysis using <strong>statistics, machine learning, and deep learning–based temporal models</strong>.</p>
     </div>
-    <div class="card" style="animation: fadeUp 0.7s ease;">
-      <p>The goal is to design human–machine systems that jointly optimize performance, system effectiveness, and safety.</p>
+    <div class="card">
+      <p>Translating insights into <strong>human–machine system design and control</strong> to optimize human performance, system efficiency, and safety.</p>
     </div>
   </div>
 </section>
@@ -62,18 +62,30 @@
 <section class="section" id="spaceflight">
   <h2>Spaceflight Human Optimization</h2>
   <div class="cards">
-    <div class="card" style="animation: fadeUp 0.5s ease;">
+    <div class="card">
       <img src="images/research/spaceflight/hazards.jpg" alt="Spaceflight hazards">
-      <h3>Hazards & Adaptation</h3>
-      <p>Investigating how astronauts adapt to altered gravity, fatigue, and workload to maintain sensorimotor performance.</p>
+      <h3>Multiple Spaceflight Hazards</h3>
+      <p>Study of how altered gravity, fatigue, and high workload affect astronaut sensorimotor performance and adaptation.</p>
     </div>
-    <div class="card" style="animation: fadeUp 0.6s ease;">
-      <h3>Data & Analysis</h3>
-      <p>Multimodal data streams analyzed with deep learning and statistical models to understand performance under stress.</p>
+    <div class="card">
+      <h3>Data Collection & Synchronization</h3>
+      <p>Multimodal streams synchronized with <strong>Lab Streaming Layer (LSL)</strong> for high-fidelity human performance analysis.</p>
     </div>
-    <div class="card" style="animation: fadeUp 0.7s ease;">
+    <div class="card">
+      <h3>Simulating Altered Gravity</h3>
+      <p>Using <strong>Galvanic Vestibular Stimulation (GVS)</strong> to perturb vestibular signals and study balance and sensorimotor responses.</p>
+    </div>
+    <div class="card">
+      <h3>Sensorimotor Test Battery</h3>
+      <p>13-task battery to assess combined effects of GVS and fatigue on performance.</p>
+    </div>
+    <div class="card">
+      <h3>Fatigue Assessment</h3>
+      <p>Mental fatigue induced with two-back task; sleep-deprivation tested overnight. Measured using PVT, KSS, and POMS.</p>
+    </div>
+    <div class="card">
       <h3>Assistive Technologies</h3>
-      <p>Temporal Convolutional Networks forecast gait instability for proactive human–machine interventions.</p>
+      <p><strong>Temporal Convolutional Networks (TCN)</strong> predict gait instability for proactive interventions.</p>
     </div>
   </div>
 </section>
@@ -82,14 +94,17 @@
 <section class="section" id="firefighter">
   <h2>Firefighter Assistive Devices</h2>
   <div class="cards">
-    <div class="card" style="animation: fadeUp 0.5s ease;">
+    <div class="card">
       <img src="images/research/firefighter/exoskeleton.jpg" alt="Firefighter exoskeleton">
-      <h3>Exoskeleton Design</h3>
-      <p>Devices developed to reduce injuries and improve firefighter safety during high-load tasks.</p>
+      <p>Developing exoskeletons to reduce injuries and enhance firefighter safety during high-load tasks.</p>
     </div>
-    <div class="card" style="animation: fadeUp 0.6s ease;">
+    <div class="card">
       <h3>Closed-Loop Control</h3>
-      <p>PID controllers regulate muscle activation, improving comfort and operational safety.</p>
+      <p>PID controllers regulate muscle activation for improved comfort and safety.</p>
+    </div>
+    <div class="card">
+      <h3>Hardware & Control Architecture</h3>
+      <p>Actuators selected based on biomechanical demands; communication via CAN bus.</p>
     </div>
   </div>
 </section>
@@ -98,29 +113,37 @@
 <section class="section" id="coal">
   <h2>Fire Safety in Coal Yards</h2>
   <div class="cards">
-    <div class="card" style="animation: fadeUp 0.5s ease;">
+    <div class="card">
       <img src="images/research/coal/coal_fire.jpg" alt="Coal yard fire safety">
-      <p>Investigated cost-effective approaches to mitigate spontaneous ignition and improve industrial safety.</p>
+      <p>Proactive methods to mitigate spontaneous ignition in coal yards. Related publications available.</p>
     </div>
   </div>
 </section>
 
-<!-- UNDERGRAD -->
+<!-- UNDERGRADUATE PROJECTS -->
 <section class="section" id="undergrad">
-  <h2>Undergraduate Projects</h2>
-  <ul class="simple-list">
-    <li>Obstacle Navigation in Mobile Robotics</li>
-    <li>Machine Vision–Based Grain Classification</li>
-  </ul>
+  <h2>Other Undergraduate Research</h2>
+  <div class="cards">
+    <div class="card">
+      <p>Obstacle Navigation in Mobile Robotics</p>
+    </div>
+    <div class="card">
+      <p>Machine Vision–Based Grain Classification</p>
+    </div>
+  </div>
 </section>
 
-<!-- INDUSTRIAL -->
+<!-- INDUSTRIAL INTERNSHIPS -->
 <section class="section" id="industry">
-  <h2>Industrial Internships</h2>
-  <ul class="simple-list">
-    <li>Pneumatic-Based Electrical Component Testing Machine</li>
-    <li>Conveyor System for Production Floor Output Collection</li>
-  </ul>
+  <h2>Industrial Internship Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <p>Pneumatic-Based Electrical Component Testing Machine</p>
+    </div>
+    <div class="card">
+      <p>Conveyor System for Production Floor Output Collection</p>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
@@ -128,7 +151,6 @@
   © 2026 Jeevan Jayasuriya
 </footer>
 
-<!-- LIGHTBOX SCRIPT -->
 <script src="js/lightbox.js"></script>
 </body>
 </html>
