@@ -1,20 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".figure img");
+document.querySelectorAll(".zoomable").forEach(img => {
+  img.addEventListener("click", () => {
+    const lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
 
-  images.forEach(img => {
-    img.addEventListener("click", () => {
-      const overlay = document.createElement("div");
-      overlay.className = "lightbox";
+    const image = document.createElement("img");
+    image.src = img.src;
 
-      const fullImg = document.createElement("img");
-      fullImg.src = img.src;
+    lightbox.appendChild(image);
+    document.body.appendChild(lightbox);
 
-      overlay.appendChild(fullImg);
-      document.body.appendChild(overlay);
-
-      overlay.addEventListener("click", () => {
-        overlay.remove();
-      });
+    lightbox.addEventListener("click", () => {
+      lightbox.remove();
     });
   });
 });
