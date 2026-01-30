@@ -270,4 +270,9 @@ body {
   text-decoration: underline;
 }
 
+nav a.active {
+  text-decoration: underline;
+  opacity: 1;
+}
+
 
