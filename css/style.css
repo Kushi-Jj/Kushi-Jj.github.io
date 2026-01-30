@@ -203,3 +203,32 @@ footer {
   border-radius: 14px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.5);
 }
+
+/* FIGURE NUMBERING */
+body {
+  counter-reset: figure;
+}
+
+.figure {
+  margin-top: 16px;
+}
+
+.figure img {
+  width: 100%;
+  border-radius: 14px;
+  cursor: zoom-in;
+}
+
+.caption {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #374151;
+  font-style: italic;
+}
+
+.caption::before {
+  counter-increment: figure;
+  content: "Figure " counter(figure) ". ";
+  font-weight: 500;
+}
+
