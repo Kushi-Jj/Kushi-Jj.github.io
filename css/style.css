@@ -275,4 +275,18 @@ nav a.active {
   opacity: 1;
 }
 
+/* Publication*/
+.pub-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.pub-authors {
+  margin-top: 0.4rem;
+}
+
+.pub-journal {
+  color: #555;
+  font-size: 0.95rem;
+}
 
