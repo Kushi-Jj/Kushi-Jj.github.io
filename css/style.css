@@ -54,14 +54,13 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
-  height: 80vh;
+  background-image: url('../images/hero-bg.jpg');
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: white;
-  text-align: center;
-  position: relative;
+  align-items: center;
+  background-size: cover;
+  color: white; /* make sure text is visible */
 }
 .hero::after {
   content: '';
