@@ -1,16 +1,6 @@
-document.querySelectorAll(".zoomable").forEach(img => {
-  img.addEventListener("click", () => {
-    const lightbox = document.createElement("div");
-    lightbox.className = "lightbox";
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-    const image = document.createElement("img");
-    image.src = img.src;
-
-    lightbox.appendChild(image);
-    document.body.appendChild(lightbox);
-
-    lightbox.addEventListener("click", () => {
-      lightbox.remove();
-    });
-  });
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
 });
