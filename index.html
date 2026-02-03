@@ -5,14 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kasuni Prasadi | Homepage</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Section fade-in animation */
+    section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Active nav link highlight */
+    nav .nav-links li a.active {
+      color: #f0a500;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">Kasuni Prasadi</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="activities.html">Activities</a></li>
@@ -26,7 +48,8 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Hello, I’m Kasuni Prasadi</h1>
       <p>PhD Student | Researcher | Passionate About Technology and Innovation</p>
@@ -34,36 +57,39 @@
     </div>
   </section>
 
-  <section class="about">
+  <!-- About Section -->
+  <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I am currently a PhD student at University of Wisconsin–Madison, specializing in [Your Research Area]. 
-      I have experience in embedded systems, AI applications, and research projects involving [Your Skills]. 
-      My goal is to contribute to innovative solutions through impactful research.
+      I am a PhD student at University of Wisconsin–Madison specializing in [Your Research Area]. 
+      Experienced in embedded systems, IoT, and AI applications. I aim to contribute to innovative research and practical solutions.
     </p>
   </section>
 
-  <section class="featured">
+  <!-- Projects / Featured -->
+  <section id="projects" class="featured">
+    <h2>Research Projects</h2>
     <div class="card">
       <img src="images/project1.jpg" alt="Project 1">
-      <h3>Research Projects</h3>
-      <p>Explore my current and past research projects.</p>
+      <h3>Embedded AI for Health Monitoring</h3>
+      <p>AI algorithms embedded in portable devices for real-time health monitoring, optimizing energy and prediction accuracy.</p>
       <a href="research.html" class="btn-small">Learn More</a>
     </div>
     <div class="card">
       <img src="images/project2.jpg" alt="Project 2">
-      <h3>Publications</h3>
-      <p>Read my peer-reviewed publications and papers.</p>
-      <a href="publications.html" class="btn-small">View Publications</a>
+      <h3>Autonomous Drone Navigation</h3>
+      <p>Implemented sensor fusion and path-planning for outdoor autonomous drones.</p>
+      <a href="research.html" class="btn-small">Learn More</a>
     </div>
     <div class="card">
-      <img src="images/project1.jpg" alt="Teaching">
-      <h3>Teaching & Mentorship</h3>
-      <p>See the courses I have taught and mentorship experiences.</p>
-      <a href="teaching.html" class="btn-small">Explore Teaching</a>
+      <img src="images/project1.jpg" alt="Project 3">
+      <h3>IoT Smart Agriculture</h3>
+      <p>Designed IoT systems to monitor soil & crop conditions and optimize farming yield using analytics.</p>
+      <a href="research.html" class="btn-small">Learn More</a>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 Kasuni Prasadi | Built with ❤️ using HTML, CSS & JS</p>
     <div class="social">
@@ -73,5 +99,38 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    // Mobile menu
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+    // Section fade-in on scroll
+    const sections = document.querySelectorAll('section');
+    const options = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, options);
+    sections.forEach(section => observer.observe(section));
+
+    // Active nav link highlight on scroll
+    const navItems = document.querySelectorAll('.nav-links li a[href^="#"]');
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY + 100;
+      sections.forEach(section => {
+        if(scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight){
+          navItems.forEach(a => a.classList.remove('active'));
+          const currentLink = document.querySelector(`.nav-links li a[href="#${section.id}"]`);
+          if(currentLink) currentLink.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
