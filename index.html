@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     /* Smooth scroll */
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
+
     /* Section fade-in animation */
     section {
       opacity: 0;
@@ -20,10 +19,50 @@
       opacity: 1;
       transform: translateY(0);
     }
+
     /* Active nav link highlight */
     nav .nav-links li a.active {
       color: #f0a500;
       font-weight: bold;
+    }
+
+    /* Hero floating animation */
+    .hero h1, .hero p, .hero .btn {
+      animation: floatIn 1s ease-out forwards;
+      opacity: 0;
+    }
+    .hero h1 { animation-delay: 0.2s; }
+    .hero p { animation-delay: 0.6s; }
+    .hero .btn { animation-delay: 1s; }
+
+    @keyframes floatIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Project card hover animation */
+    .card {
+      background-color: #f5f5f5;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      transition: all 0.4s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+      transform: translateY(-15px) scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
   </style>
 </head>
@@ -89,7 +128,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2026 Kasuni Prasadi | Built with ❤️ using HTML, CSS & JS</p>
     <div class="social">
@@ -109,14 +147,13 @@
 
     // Section fade-in on scroll
     const sections = document.querySelectorAll('section');
-    const options = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
           entry.target.classList.add('visible');
         }
       });
-    }, options);
+    }, { threshold: 0.1 });
     sections.forEach(section => observer.observe(section));
 
     // Active nav link highlight on scroll
