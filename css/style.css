@@ -38,15 +38,40 @@ nav {
   color: #f0a500;
 }
 
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  border-radius: 2px;
+}
+
 /* Hero Section */
 .hero {
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  background: url('../images/hero.jpg') center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 .hero h1 {
   font-size: 3rem;
@@ -68,24 +93,21 @@ nav {
   background-color: #cf8500;
 }
 
-/* About Section */
-.about {
+/* Sections */
+section {
   padding: 4rem 2rem;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
 }
-.about h2 {
+section h2 {
+  text-align: center;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* Featured Cards */
+/* Featured Cards (Homepage & Research) */
 .featured {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 3rem 2rem;
   flex-wrap: wrap;
 }
 .card {
@@ -95,6 +117,11 @@ nav {
   width: 250px;
   text-align: center;
   transition: 0.3s;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 .card:hover {
   transform: translateY(-10px);
@@ -111,6 +138,25 @@ nav {
 }
 .btn-small:hover {
   background-color: #333;
+}
+
+/* Publications Table */
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #1e1e2f;
+  color: #fff;
+}
+tr:hover {
+  background-color: #f0f0f0;
 }
 
 /* Footer */
@@ -131,20 +177,6 @@ footer .social a:hover {
 }
 
 /* Responsive Navbar */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background: #fff;
-  border-radius: 2px;
-}
-
-/* Mobile */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
