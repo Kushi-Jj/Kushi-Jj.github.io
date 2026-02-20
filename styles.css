@@ -1,1 +1,157 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background: #222;
+  padding: 10px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #f0a500;
+}
+
+/* Hero Section */
+header.hero {
+  background: #222 url('images/hero-bg.jpg') no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+header.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header.hero p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+header.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #f0a500;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header.hero .btn:hover {
+  background: #fff;
+  color: #222;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Project / Card */
+.project-card {
+  background: #fff;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Skills */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Social Links */
+.social-links a {
+  margin: 0 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #f0a500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  header.hero h1 {
+    font-size: 2em;
+  }
+  header.hero p {
+    font-size: 1.2em;
+  }
+  .project-card {
+    width: 90%;
+  }
+}
 
