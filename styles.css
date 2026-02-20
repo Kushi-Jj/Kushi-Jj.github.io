@@ -33,12 +33,16 @@ a {
   color: #f0a500;
 }
 
-/* Hero Section */
+/* Hero Section 
 header.hero {
   background: #222 url('images/hero.jpg') no-repeat center/cover;
   color: #fff;
   text-align: center;
   padding: 120px 20px;
+} */
+
+header.hero {
+  background: #222 url('images/hero.jpg') no-repeat center/cover;
 }
 
 header.hero h1 {
