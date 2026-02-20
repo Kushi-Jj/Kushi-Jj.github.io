@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <h2 class="logo">Kasuni Prasadi</h2>
+    <nav>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
+  <a href="{{ '/research/' | relative_url }}">Research</a>
+  <a href="{{ '/publications/' | relative_url }}">Publications</a>
+  <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+  <a href="{{ '/activities/' | relative_url }}">Activities</a>
+</nav>
+  </div>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  <p>© {{ site.time | date: "%Y" }} Kasuni Prasadi</p>
+</footer>
+
+</body>
+</html>
