@@ -1,1 +1,10 @@
+title: "Kasuni Prasadi"
+description: "Ph.D. Student | Industrial & Systems Engineering"
+url: "https://kushi-jj.github.io"
+baseurl: ""
 
+markdown: kramdown
+theme: minima
+
+author:
+  name: Kasuni Prasadi
